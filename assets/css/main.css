@@ -276,7 +276,11 @@ h1{
 	color: red;
 }
 
-li{
+.green {
+	color: lawngreen;
+}
+
+li {
 	list-style: none;
 }
 
@@ -284,4 +288,8 @@ li{
 	height: 280px;
 	margin: 20px 0;
 	border: none;
+}
+
+.big-h3 {
+	font-size: 30px
 }

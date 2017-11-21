@@ -59,7 +59,7 @@ subMenuBtn2.classList.add('submenu2-btn');
 subMenuBtn3.classList.add('submenu2-btn');
 
 sedeBtn.textContent = 'SANTIAGO DE CHILE 2017 - II';
-iconoBtnPullDown.setAttribute = ('aria-hidden', 'true');
+iconoBtnPullDown.setAttribute('aria-hidden', 'true');
 subMenuBtn1Link.setAttribute('href', 'index.html');
 subMenuBtn1Link.textContent = 'OVERVIEW';
 subMenuBtn2Link.setAttribute('href', 'students.html');

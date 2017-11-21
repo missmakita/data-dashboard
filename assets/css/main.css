@@ -23,7 +23,7 @@ body {
 	height: 370px;
 	width: 370px;
  	background: #fff;
- 	display:inline-block;
+ 	display: inline-block;
  	margin: 0 20px 0 0;
 	vertical-align: top;
 	padding: 20px;
@@ -130,7 +130,8 @@ h2 {
 	display: inline-block;
 	vertical-align: top;
 	border-radius: 5px;
-	border: 3px solid #F7B617;
+	border: none;
+	box-shadow: 1px 1px 1px 1px #E1E1E1;
 } 
 
 datos:last-child {
@@ -145,6 +146,7 @@ h3 {
 
 p{
 	margin: 0;
+	font-size: 12px;
 }
 
 .mini-graph{
@@ -175,11 +177,12 @@ li{
 
  /*Tech Skills*/
 
- .graph-box{
+.graph-box{
  	background: white;
  	height: auto;
  	width: 100%;
  	display:inline-block;
+	padding: 30px;
  }
 
 hr{
@@ -226,7 +229,7 @@ h1{
 /*LIFE SKILLS*/
 
 hr{
-   border: 2px solid black;	
+   border: none;	
    width: 100px;
    margin-right: 910px;
    margin-top: -15px;
@@ -235,9 +238,11 @@ h1{
 	display: inline-block;
 	margin-left: 30px;
 }
- .b1{
+
+.b1{
  	display: inline-block;
  	margin-left: 30px;
+	border-bottom: 2px solid;
  }
 
 .b2{
@@ -267,33 +272,16 @@ h1{
 
 /*RANKINGS*/
 
-p{
-	font-size: 12px;
-}
- 
-.one{
-	border: 1px solid black; 
-	margin-left: 50px;
-	margin-top:30px;
-
-} 
-
 .rojo{
 	color: red;
-}
-
-.two{
-	border: 1px solid black; 
-	margin-left: 50px;
-	margin-top:30px;
 }
 
 li{
 	list-style: none;
 }
 
-.three {
-	border: 1px solid black; 
-	margin-left: 50px;
-	margin-top:30px;
+.big-graph {
+	height: 280px;
+	margin: 20px 0;
+	border: none;
 }

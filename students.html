@@ -11,18 +11,34 @@
 	<div class="container">
 		<div class="col-1">
 			<div class="filter-box">
-				<h3>SPECIALIZATION:</h3>
+				<h4>CITY:</h4>
+				<span class="checkbox" id="AQP"><input type="checkbox">Arequipa</span>
+				<span class="checkbox" id="LIM"><input type="checkbox">Lima</span>
+				<span class="checkbox" id="CDMX"><input type="checkbox">Ciudad de México</span>
+				<span class="checkbox" id="SCL"><input type="checkbox">Santiago de Chile</span>
+				<h4>YEAR:</h4>
+				<span class="checkbox" id="2014"><input type="checkbox">2014</span>
+				<span class="checkbox" id="2015"><input type="checkbox">2015</span>
+				<span class="checkbox" id="2016"><input type="checkbox">2016</span>
+				<span class="checkbox" id="2017"><input type="checkbox">2017</span>
+				<h4>SEMESTER:</h4>
+				<span class="checkbox" id="genI"><input type="checkbox">I</span>
+				<span class="checkbox" id="genII"><input type="checkbox">II</span>
+				<h4>SHIFT:</h4>
+				<span class="checkbox" id="AQP"><input type="checkbox">AM</span>
+				<span class="checkbox" id="LIM"><input type="checkbox">PM</span>
+				<h4>SPECIALIZATION:</h4>
 				<span class="checkbox" id="js-filter"><input type="checkbox">Javascript</span>
-				<span class="checkbox" id="ux-filter"><input type="checkbox">UX Design</span>
-				<span class="checkbox" id="frontend-filter"><input type="checkbox">Front End Designer</span>
+				<span class="checkbox" id="ux-filter"><input type="checkbox">UX Designer</span>
+				<span class="checkbox" id="frontend-filter"><input type="checkbox">Front End Developer</span>
 			</div>
 		</div>
 		<div class="col-2">
 			<div class="search-box">
 				<span class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
-				<input type="search">
+				<input id="search-input" type="search">
 			</div>
-			<!--Aquí van los resultados de búsqueda-->
+			<!--Aquí va el Listado de estudiantes-->
 			<ul id="students-list">
 				<!--<li class="student-item">
 					<table class="student-table">

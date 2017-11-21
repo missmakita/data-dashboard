@@ -1,5 +1,12 @@
 console.log(data);
-var studentsList = document.getElementById('students-list');
+
+
+//Generar especialización aleatorio:
+function getRandomSpecialty() {
+	var specialties = ["Javascript", "UX Designer", "Front End Developer"];
+	var random = Math.round((Math.random()* (2-0+0)));
+	return specialties[random];
+}
 
 //Generar puntajes aleatorios:
 function getRandomScore(min, max) {
@@ -24,19 +31,7 @@ function getRandomEngLevel() {
 //	var studentImg = document.createElement('img');
 //	var studentData1 = document.createElement('td');
 	//var studentName = document.createElement('h1');
-	//var studentSpecialty = document.createElement('span');
-//	var studentDiv = document.createElement('div');
-//	var studentData2 = document.createElement('td');
-//	var studentSkillsDiv = document.createElement('div');
-//	var studentSkillDiv1	= document.createElement('div');
-//	var studentTechGrade = document.createElement('span');
-//	var studentSkillTech = document.createElement('span');
-//	var studentSkillDiv2	= document.createElement('div');
-//	var studentLifeGrade = document.createElement('span');	
-//	var studentSkillLife = document.createElement('span');
-//	var studentSkillDiv3	= document.createElement('div');
-//	var studentEngGrade = document.createElement('span');
-//	var studentSkillEng = document.createElement('span');
+
 	
 	//Creando nodos para los nuevos elementos:
 	//studentsList.appendChild(studentItem);
@@ -82,6 +77,7 @@ function getRandomEngLevel() {
 //	studentEngGrade.classList.add('skill-grade', 'eng-grade');
 //	studentSkillEng.classList.add('skill-name');
 
+var studentsList = document.getElementById('students-list');
 
 	for (var i = 0; i < data.SCL['2017-2'].students.length; i++) {
 		if (Object.keys(data.SCL['2017-2'].students[i])!= '') {
@@ -96,6 +92,9 @@ function getRandomEngLevel() {
 			var studentName = document.createElement('h1');
 			var studentSpecialty = document.createElement('span');
 			var studentDiv = document.createElement('div');
+			var studentLang1 = document.createElement('span');
+			var studentLang2 = document.createElement('span');
+			var studentLang3 = document.createElement('span');
 			var studentData2 = document.createElement('td');
 			var studentSkillsDiv = document.createElement('div');
 			var studentSkillDiv1	= document.createElement('div');
@@ -107,6 +106,9 @@ function getRandomEngLevel() {
 			var studentSkillDiv3	= document.createElement('div');
 			var studentEngGrade = document.createElement('span');
 			var studentSkillEng = document.createElement('span');
+			var studentSkillDiv4	= document.createElement('div');
+			var studentAsistScore = document.createElement('span');
+			var studentAsistencia = document.createElement('span');
 			var verPerfil = document.createElement('span');
 			
 			//Creando nodos para los nuevos elementos:
@@ -119,6 +121,9 @@ function getRandomEngLevel() {
 			studentData1.appendChild(studentName);
 			studentData1.appendChild(studentSpecialty);
 			studentData1.appendChild(studentDiv);
+			studentDiv.appendChild(studentLang1);
+			studentDiv.appendChild(studentLang2);
+			studentDiv.appendChild(studentLang3);
 			studentRow.appendChild(studentData2);
 			studentData2.appendChild(studentSkillsDiv);
 			studentSkillsDiv.appendChild(studentSkillDiv1);
@@ -130,6 +135,9 @@ function getRandomEngLevel() {
 			studentSkillsDiv.appendChild(studentSkillDiv3);
 			studentSkillDiv3.appendChild(studentEngGrade);
 			studentSkillDiv3.appendChild(studentSkillEng);
+			studentSkillsDiv.appendChild(studentSkillDiv4);
+			studentSkillDiv4.appendChild(studentAsistScore);
+			studentSkillDiv4.appendChild(studentAsistencia);
 			studentData2.appendChild(verPerfil);
 			
 			//Creando clases para los nuevos elementos:
@@ -153,6 +161,9 @@ function getRandomEngLevel() {
 			studentSkillDiv3.classList.add('skill');
 			studentEngGrade.classList.add('skill-grade', 'eng-grade');
 			studentSkillEng.classList.add('skill-name');
+			studentSkillDiv4.classList.add('skill');
+			studentAsistScore.classList.add('skill-grade', 'asist-score');
+			studentAsistencia.classList.add('skill-name');
 			verPerfil.classList.add('perfil');
 			
 			//Creando contenidos:
@@ -160,41 +171,35 @@ function getRandomEngLevel() {
 			studentImg.style.width = '160px';
 			studentImg.style.height = '160px';
 			studentName.textContent += data.SCL['2017-2'].students[i].name;
-			studentSpecialty.textContent += 'Front End Developer';
+			studentSpecialty.textContent += getRandomSpecialty();
+			studentLang1.textContent = 'JAVASCRIPT';
+			studentLang2.textContent = 'APIs';
+			studentLang3.textContent = 'JQUERY';
 			studentTechGrade.textContent += Math.round(getRandomScore(50, 100), -2) +'%';
 			studentSkillTech.textContent = 'TECH SKILLS';
 			studentLifeGrade.textContent += Math.round(getRandomScore(50, 100), -2) +'%';
 			studentSkillLife.textContent = 'LIFE SKILLS';
 			studentEngGrade.textContent += getRandomEngLevel();
 			studentSkillEng.textContent = 'ENGLISH SKILLS';
+			studentAsistScore.textContent += '81%'; 
+			studentAsistencia.textContent = 'ASISTENCIA';
 			verPerfil.textContent = 'Ver perfil ►';
-			
-			//var result = 0;
-//			if (Object.keys(data.SCL['2017-2'].students[i].sprints) != "") {
-//				for (var x = 0; x < data.SCL['2017-2'].students[i].sprints.length; x++) {
-//					result += data.SCL['2017-2'].students[i].sprints[x].score.tech;	
-//					}
-//			}	
+
 		}
 }
 
-	
-	//var studentSpecialty = document.getElementsByClassName('student-specialty');
-//	var techGrade = document.getElementsByClassName('tech-grade');
-//	var lifeGrade = document.getElementsByClassName('life-grade');
-//	var engGrade = document.getElementsByClassName('eng-grade');
-	
-	
-	
+//FUNCIÓN BÚSQUEDA DE ESTUDIANTES:
 
 
-	////FUNCION FILTRADO ESTUDIANTES:
+
+
+
+
+
+
+//FUNCION FILTRADO ESTUDIANTES:
 //	var jsFilter = document.getElementById('js-filter');
 //	var uxFilter = document.getElementById('ux-filter');
 //	var frontEndFilter = document.getElementById('frontend-filter');
 	
 	
-	
-	//for (var i = 0; i < data.SCL['2017-2'].students.length; i++) {
-//		console.log(data.SCL['2017-2'].students[i].name);
-//		container.innerHTML += '<p>La estudiante número ' + [i+1] + ' es: ' + data.SCL['2017-2'].students[i].name + '</p>'

@@ -28,7 +28,7 @@ header {
 	display: inline-block;
 }
 
-#logo {
+.logo {
 	width: 100%;
 	height: 100%;
 }
@@ -58,7 +58,7 @@ header {
 	font-size: 30px;
 }
 
-#submenu1-pull {
+.submenu1-pull {
 	padding: 0 20px;
 }
 

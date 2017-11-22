@@ -21,5 +21,24 @@
 3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
    (puedes solicitar apoyo de tus profes para este paso).
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+## Descripción
+
+En este proyecto quisimos hacer una página web que permitiera al usuario
+acceder de una manera fácil a la información de alumnas y profesores de 
+distintas sedes.
+
+Cuenta con un menú que direcciona a la sección alumnas, la cual contiene filtros
+de selección por sede, año, semestre , turno y especialidad.
+
+Existe una barra buscadora que permite buscar de manera específica el nombre de una 
+alumna o cualquier otro término de búsqueda.
+
+Los datos de la alumna son arrojados por especialidad y sus porcentajes respectivos, más su foto de
+perfil.
+
+Los datos son reflejados por medio de gráficos que representan asistencia, si una alumna se retira,
+aprobación, reprobación de las alumnas, evaluaciones de los profesores.
+
+Para organizar el trabajo en equipo, utilizamos la herramienta Trello, adjuntamos el link del tablero:
+
+https://trello.com/invite/b/njCD9P3j/f34db24ab8028e0633cf2e59e6825e1a/data-dashboard
